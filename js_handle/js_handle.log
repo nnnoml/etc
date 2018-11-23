@@ -1,0 +1,23 @@
+click x:708 y:363
+move x:708 y:363
+move x:24 y:519
+move x:744 y:241
+move x:711 y:240
+click x:1411 y:264
+keyDown code:49
+keyDown code:50
+keyDown code:51
+keyDown code:49
+keyDown code:50
+keyDown code:51
+keyDown code:49
+keyDown code:50
+keyDown code:51
+keyDown code:49
+keyDown code:50
+keyDown code:51
+move x:47 y:247
+move x:1816 y:300
+move x:1697 y:370
+click x:1775 y:222
+move x:802 y:0
