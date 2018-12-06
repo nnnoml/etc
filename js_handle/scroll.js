@@ -15,9 +15,9 @@
                 || document.documentElement.scrollLeft  
                 || document.body.scrollLeft
                 || 0;
-    ajaxGet(0,'scroll top:'+scrollTop+' left:'+scrollLeft);
+    // ajaxGet(0,'scroll top:'+scrollTop+' left:'+scrollLeft);
+    ajaxGet(0,'set_scroll('+scrollTop+','+scrollLeft+');');
   }
-
   window.onresize = function(){
     //TODO
   }

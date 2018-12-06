@@ -4,26 +4,40 @@
   var mouse_send_x = 0; //上次发送的X坐标
   var mouse_send_y = 0; //上次发送的Y坐标
 
-
-  body[0].addEventListener('keydown', myKeyDown, false);
-
+  addEvtListener(body[0],'keydown',myKeyDown);
+  iframe_PS.push(['keydown',myKeyDown]);
  /*输出输入的字符*/
   function myKeyDown() {
-      var e = event || window.event;
-      var k = e.keyCode || e.which;
-      // console.log(String.fromCharCode(k));
-      
-      if(e.shiftKey){
-        ajaxGet(0,'keyDown metaKey:shift');
-      }
-      else if(e.ctrlKey){
-        ajaxGet(0,'keyDown metaKey:ctrl');
-      }
-      else if(e.altKey){
-        ajaxGet(0,'keyDown metaKey:alt');
+//当前焦点对象
+      var act = document.activeElement;
+      if(act.nodeName == 'INPUT' || act.nodeName == 'TEXTAREA'){
+        self = act;
+        setTimeout(function(){
+            level = 0;
+            level_arr = [];
+            var get_level = tagLevel(self);
+            // ajaxGet(0,'keyDown_'+act.nodeName+' '+get_level.join(',')+' value :'+self.value);
+            ajaxGet(0,'click_tag_mouse("'+get_level.join(',')+'");input_text("'+self.value+'");');
+        },300);
       }
       else{
-        ajaxGet(0,'keyDown code:'+k);
+        var e = event || window.event;
+        var k = e.keyCode || e.which;
+        // console.log(String.fromCharCode(k));
+        
+        if(e.shiftKey){
+          // ajaxGet(0,'keyDown metaKey:shift');
+        }
+        else if(e.ctrlKey){
+          // ajaxGet(0,'keyDown metaKey:ctrl');
+        }
+        else if(e.altKey){
+          // ajaxGet(0,'keyDown metaKey:alt');
+        }
+        else{
+          // ajaxGet(0,'keyDown code:'+k);
+          ajaxGet(0,'input_text("'+String.fromCharCode(k)+'");');
+        }
       }
       // switch(k) {
       //   case 37: break; 

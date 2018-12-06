@@ -1,23 +1,311 @@
-click x:708 y:363
-move x:708 y:363
-move x:24 y:519
-move x:744 y:241
-move x:711 y:240
-click x:1411 y:264
-keyDown code:49
-keyDown code:50
-keyDown code:51
-keyDown code:49
-keyDown code:50
-keyDown code:51
-keyDown code:49
-keyDown code:50
-keyDown code:51
-keyDown code:49
-keyDown code:50
-keyDown code:51
-move x:47 y:247
-move x:1816 y:300
-move x:1697 y:370
-click x:1775 y:222
-move x:802 y:0
+show_ie_title(W3School在线测试工具 V2);
+show_ie_title(js 获取鼠标位置_百度搜索);
+mouse_move(0,0,24,183);
+show_ie_title(W3School在线测试工具 V2);
+mouse_move(0,0,49,100);
+mouse_move(0,0,94,95);
+click_tag_mouse("0,2");input_text("123");
+mouse_move(0,0,217,112);
+click_tag_mouse("0,2");input_text("123");
+click_tag_mouse("0,2");input_text("123hah");
+click_tag_mouse("0,2");input_text("123haha");
+click_tag_mouse("0,2");input_text("123hahah");
+click_tag_mouse("0,2");input_text("123hahah");
+click_tag_mouse("0,2");input_text("123hahah");
+click_tag_mouse("0,2");input_text("123hahahh");
+click_tag_mouse("0,2");input_text("123hahah哈");
+click_tag_mouse("0,2");input_text("123hahah哈");
+click_tag_mouse("0,2");input_text("123hahah哈");
+click_rect("rect(395,101,1,1");
+mouse_move(0,0,395,101);
+mouse_move(0,0,288,1);
+show_ie_title(js 获取鼠标位置_百度搜索);
+mouse_move(0,0,306,13);
+mouse_move(0,0,316,17);
+click_tag_mouse("0,1,0,0,0,3,7,2");input_text("js 获取鼠标位置haah");
+click_tag_mouse("0,1,0,0,0,3,7,2");input_text("js 获取鼠标位置haah");
+click_tag_mouse("0,1,0,0,0,3,7,2");input_text("js 获取鼠标位置haah");
+click_tag_mouse("0,1,0,0,0,3,7,2");input_text("js 获取鼠标位置haah");
+click_tag_mouse("0,1,0,0,0,3,7,2");input_text("js 获取鼠标位置哈哈哈");
+click_tag_mouse("0,1,0,0,0,3,7,2");input_text("js 获取鼠标位置哈哈哈");
+click_tag_mouse("0,1,0,0,0,3,7,2");input_text("js 获取鼠标位置哈哈哈");
+mouse_move(0,0,8,256);
+show_ie_title(W3School在线测试工具 V2);
+mouse_move(0,0,215,13);
+mouse_move(0,0,216,1);
+show_ie_title(W3School在线测试工具 V2);
+show_ie_title(W3School在线测试工具 V2);
+UTF-8
+UTF-8
+UTF-8
+ASCII
+UTF-8
+UTF-8
+ASCII
+UTF-8
+UTF-8
+ASCII
+UTF-8
+UTF-8
+ASCII
+UTF-8
+ASCII
+ASCII
+ASCII
+ASCII
+ASCII
+ASCII
+mouse_move(0,0,162,102);
+click_tag_mouse("0,2");input_text("123hahah哈33");
+click_tag_mouse("0,2");input_text("123hahah哈332");
+mouse_move(0,0,180,2);
+show_ie_title(js 获取鼠标位置_百度搜索);
+mouse_move(0,0,320,25);
+click_tag_mouse("0,1,0,0,0,3,7,2");input_text("js 获取鼠标位置哈哈哈223");
+click_tag_mouse("0,1,0,0,0,3,7,2");input_text("js 获取鼠标位置哈哈哈223");
+mouse_move(0,0,307,1);
+show_ie_title(W3School在线测试工具 V2);
+mouse_move(0,0,32,359);
+mouse_move(0,0,877,426);
+mouse_move(0,0,859,413);
+mouse_move(0,0,574,4);
+show_ie_title(js 获取鼠标位置_百度搜索);
+show_ie_title(W3School在线测试工具 V2);
+show_ie_title(js 获取鼠标位置_百度搜索);
+show_ie_title(W3School在线测试工具 V2);
+mouse_move(0,0,66,59);
+mouse_move(0,0,442,95);
+mouse_move(0,0,372,12);
+show_ie_title(W3School在线测试工具 V2);
+show_ie_title(js 获取鼠标位置_百度搜索);
+show_ie_title(W3School在线测试工具 V2);
+mouse_move(0,0,498,35);
+mouse_move(0,0,329,6);
+mouse_move(0,0,142,261);
+click_rect("rect(142,261,1,1");
+mouse_move(0,0,694,484);
+mouse_move(0,0,637,527);
+mouse_move(0,0,177,119);
+mouse_move(0,0,609,528);
+set_scroll(1,0);
+set_scroll(6,0);
+set_scroll(13,0);
+set_scroll(23,0);
+set_scroll(38,0);
+set_scroll(79,0);
+set_scroll(105,0);
+set_scroll(130,0);
+set_scroll(174,0);
+set_scroll(188,0);
+set_scroll(196,0);
+set_scroll(200,0);
+set_scroll(201,0);
+set_scroll(206,0);
+set_scroll(223,0);
+set_scroll(236,0);
+set_scroll(250,0);
+mouse_move(0,0,780,366);
+set_scroll(277,0);
+set_scroll(287,0);
+set_scroll(295,0);
+set_scroll(300,0);
+set_scroll(299,0);
+set_scroll(294,0);
+set_scroll(287,0);
+set_scroll(276,0);
+set_scroll(264,0);
+set_scroll(249,0);
+set_scroll(222,0);
+set_scroll(212,0);
+set_scroll(205,0);
+set_scroll(200,0);
+set_scroll(199,0);
+set_scroll(194,0);
+set_scroll(186,0);
+set_scroll(162,0);
+set_scroll(147,0);
+set_scroll(133,0);
+set_scroll(110,0);
+set_scroll(104,0);
+set_scroll(101,0);
+set_scroll(100,0);
+mouse_move(0,0,707,15);
+set_scroll(101,0);
+set_scroll(102,0);
+set_scroll(104,0);
+set_scroll(108,0);
+set_scroll(110,0);
+mouse_move(0,0,678,351);
+set_scroll(114,0);
+set_scroll(115,0);
+set_scroll(114,0);
+set_scroll(109,0);
+set_scroll(102,0);
+set_scroll(92,0);
+set_scroll(79,0);
+set_scroll(65,0);
+set_scroll(38,0);
+set_scroll(20,0);
+set_scroll(16,0);
+set_scroll(15,0);
+set_scroll(16,0);
+set_scroll(21,0);
+set_scroll(29,0);
+set_scroll(40,0);
+set_scroll(53,0);
+set_scroll(83,0);
+set_scroll(95,0);
+mouse_move(0,0,681,356);
+set_scroll(105,0);
+set_scroll(115,0);
+mouse_move(0,0,685,368);
+mouse_move(0,0,416,515);
+set_scroll(105,0);
+mouse_move(0,0,240,107);
+set_scroll(104,0);
+set_scroll(99,0);
+set_scroll(92,0);
+set_scroll(81,0);
+set_scroll(68,0);
+set_scroll(41,0);
+set_scroll(29,0);
+set_scroll(18,0);
+set_scroll(5,0);
+set_scroll(1,0);
+set_scroll(0,0);
+set_scroll(1,0);
+set_scroll(6,0);
+set_scroll(13,0);
+set_scroll(23,0);
+set_scroll(46,0);
+set_scroll(57,0);
+set_scroll(68,0);
+set_scroll(86,0);
+set_scroll(93,0);
+set_scroll(98,0);
+set_scroll(104,0);
+set_scroll(105,0);
+mouse_move(0,0,447,518);
+mouse_move(0,0,907,316);
+mouse_move(0,0,934,333);
+mouse_move(0,0,1802,365);
+mouse_move(0,0,1750,484);
+mouse_move(0,0,1823,427);
+mouse_move(0,0,862,86);
+mouse_move(0,0,811,97);
+mouse_move(0,0,689,7);
+show_ie_title(W3School在线测试工具 V2);
+show_ie_title(js 获取鼠标位置_百度搜索);
+show_ie_title(W3School在线测试工具 V2);
+show_ie_title(W3School在线测试工具 V2);
+mouse_move(0,0,1814,243);
+mouse_move(0,0,1756,527);
+mouse_move(0,0,1814,379);
+mouse_move(0,0,1826,432);
+mouse_move(0,0,1735,375);
+mouse_move(0,0,1780,1);
+mouse_move(0,0,131,3);
+close_ie(0);
+set_scroll(106,0);
+set_scroll(111,0);
+set_scroll(120,0);
+set_scroll(135,0);
+set_scroll(157,0);
+set_scroll(226,0);
+set_scroll(381,0);
+set_scroll(398,0);
+mouse_move(0,0,2,11);
+set_scroll(405,0);
+set_scroll(188,0);
+set_scroll(352,0);
+set_scroll(270,0);
+set_scroll(314,0);
+mouse_move(0,0,917,108);
+set_scroll(505,0);
+mouse_move(0,0,167,399);
+mouse_move(0,0,898,225);
+mouse_move(0,0,1826,120);
+set_scroll(508,0);
+set_scroll(527,0);
+set_scroll(564,0);
+set_scroll(574,0);
+set_scroll(583,0);
+set_scroll(593,0);
+set_scroll(602,0);
+set_scroll(611,0);
+set_scroll(621,0);
+set_scroll(630,0);
+set_scroll(640,0);
+set_scroll(649,0);
+set_scroll(659,0);
+set_scroll(668,0);
+set_scroll(677,0);
+mouse_move(0,0,360,528);
+mouse_move(0,0,1750,331);
+mouse_move(0,0,1826,309);
+set_scroll(687,0);
+set_scroll(696,0);
+set_scroll(706,0);
+set_scroll(715,0);
+set_scroll(724,0);
+set_scroll(734,0);
+set_scroll(743,0);
+set_scroll(753,0);
+set_scroll(762,0);
+set_scroll(743,0);
+set_scroll(724,0);
+set_scroll(706,0);
+set_scroll(687,0);
+set_scroll(668,0);
+set_scroll(649,0);
+set_scroll(630,0);
+set_scroll(611,0);
+set_scroll(593,0);
+set_scroll(574,0);
+set_scroll(555,0);
+mouse_move(0,0,659,248);
+mouse_move(0,0,205,5);
+mouse_move(0,0,163,366);
+mouse_move(0,0,1813,473);
+mouse_move(0,0,818,394);
+mouse_move(0,0,1818,495);
+mouse_move(0,0,1819,402);
+mouse_move(0,0,849,360);
+mouse_move(0,0,1819,339);
+mouse_move(0,0,1825,503);
+mouse_move(0,0,1817,442);
+mouse_move(0,0,888,58);
+mouse_move(0,0,881,151);
+mouse_move(0,0,883,383);
+mouse_move(0,0,1827,304);
+mouse_move(0,0,1825,451);
+mouse_move(0,0,768,365);
+mouse_move(0,0,1818,139);
+mouse_move(0,0,290,83);
+mouse_move(0,0,24,82);
+mouse_move(0,0,231,23);
+mouse_move(0,0,548,250);
+show_ie_title(W3School在线测试工具 V2);
+mouse_move(0,0,907,344);
+mouse_move(0,0,35,348);
+click_rect("rect(603,356,1,1");
+mouse_move(0,0,603,356);
+mouse_move(0,0,861,370);
+mouse_move(0,0,865,366);
+mouse_move(0,0,868,363);
+mouse_move(0,0,871,361);
+mouse_move(0,0,881,344);
+mouse_move(0,0,1820,487);
+mouse_move(0,0,862,509);
+mouse_move(0,0,885,363);
+mouse_move(0,0,1824,388);
+mouse_move(0,0,1823,227);
+mouse_move(0,0,1700,458);
+mouse_move(0,0,1795,491);
+mouse_move(0,0,773,363);
+mouse_move(0,0,1822,498);
+mouse_move(0,0,882,205);
+mouse_move(0,0,463,199);
+mouse_move(0,0,379,1);
+show_ie_title(W3School在线测试工具 V2);
+show_ie_title(js 获取鼠标位置_百度搜索);

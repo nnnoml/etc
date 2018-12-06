@@ -5,22 +5,35 @@
   var mouse_send_y = 0; //上次发送的Y坐标
 
 //--监听mouse click
-  body[0].addEventListener('click', mouseWatchClick, false);
-  function mouseWatchClick() {
-    var e = window.event || event;
-    // console.log('click','x',e.clientX,'y',e.clientY);
-    ajaxGet(0,'click x:'+e.clientX+' y:'+e.clientY);
-    stopPropagation();
+  addEvtListener(body[0],'click',mouseWatchClick);
+  iframe_PS.push(['click',mouseWatchClick]);
+
+  function mouseWatchClick(e) {
+    var e = window.event || e;
+    let x = e.clientX;
+    let y = e.clientY;
+    // ajaxGet(0,'click x:'+e.clientX+' y:'+e.clientY);
+    //2345有一个定时器一直在点击body的00位置
+    if(x!= mouse_send_x || y != mouse_send_y){
+        mouse_send_x = x;
+        mouse_send_y = y;
+        ajaxGet(0,'click_rect("rect('+e.clientX+','+e.clientY+',1,1");');
+      }
+    stopPropagation(e);
   }
 
+
 //--监听mouse move
-  body[0].addEventListener('mousemove', mouseWatchMove, false);
-  function mouseWatchMove() {
-    var e = window.event || event;
+  addEvtListener(body[0],'mousemove',mouseWatchMove);
+  iframe_PS.push(['mousemove',mouseWatchMove]);
+
+
+  function mouseWatchMove(e) {
+    var e = window.event || e;
     let x = e.clientX;
     let y = e.clientY;
     // console.log('x',e.clientX,'y',e.clientY);
-    stopPropagation();
+    stopPropagation(e);
     mouseTimer(x,y);
   }
 
@@ -31,7 +44,8 @@
       if(x!= mouse_send_x || y != mouse_send_y){
         mouse_send_x = x;
         mouse_send_y = y;
-        ajaxGet(0,'move x:'+x+' y:'+y,'mouseAjaxRes');
+        // ajaxGet(0,'move x:'+x+' y:'+y);
+        ajaxGet(0,'mouse_move(0,0,'+x+','+y+');');
       }
-    },1000);
+    },100);
   }
