@@ -1,0 +1,151 @@
+<!DOCTYPE>
+<html>
+ <head>
+  <title> 图片加密解密工具 </title>
+  <meta charset="utf-8">
+ </head>
+
+ <body>   
+    <h1>图片加密解密工具</h1>
+    <div id='main' class='section dark'>
+        <div class='step'>选择图片</div>
+        <input type='file' id='file' />
+        <img id='preview'/>
+        <canvas id='canvas' style="display:none;"></canvas>
+    </div>
+    
+    <div id='choose' style="display: none; margin:20px 0px;">
+        <button id='encode_nav' class='submit'>隐藏文本</button>
+        <button id='decode' class='submit'>解析文本</button>
+    </div>
+
+    <div id='encode_div' style="display: none; margin:20px 0px;">
+        <div class='step'><div id="hide_len"></div></div>
+        <div class='left'>
+            <textarea id='message_encode' style="height:200px;width:600px;" placeholder='输入隐藏文本' onkeydown="checkLen(this)"></textarea>
+                <br />
+            <button id='encode' class='submit'>开始隐藏</button>
+            <label><input type="checkbox" id="debug" />debug mode</label>
+        </div>
+        <h3>加密后图片</h3>
+        <img id='output' />
+        <h3>base64</h3>
+        <textarea disabled="true" id='encode_base64' style="height:200px;width:600px;"></textarea>
+    </div>
+
+    <div id='decode_div' style="display: none; margin:20px 0px;">
+        <div class='step'><div id="hide_len"></div></div>
+        <div class='left'>
+            <textarea disabled="true" id='message_decode' style="height:200px;width:600px;"></textarea>
+        </div>
+    </div>
+
+  <script type="text/javascript" src="base64.js"></script>
+  <script type="text/javascript">
+var mask = new ImageMask({debug: false});
+var count = 0;
+  window.onload = function() {
+    // add action to the file input
+    var input = document.getElementById('file');
+    input.addEventListener('change', importImage);
+
+    var encodeNavButton = document.getElementById('encode_nav');
+    encodeNavButton.addEventListener('click', encode_nav);
+
+    var encodeButton = document.getElementById('encode');
+    encodeButton.addEventListener('click', encode);
+
+    var decodeButton = document.getElementById('decode');
+    decodeButton.addEventListener('click', decode);
+};
+
+// put image in the canvas and display it
+var importImage = function(e) {
+    var reader = new FileReader();
+
+    reader.onload = function(event) {
+        // set the preview
+        document.getElementById('preview').style.display = 'block';
+        document.getElementById('preview').src = event.target.result;
+
+        // wipe all the fields clean
+        document.getElementById('message_encode').value = '';
+        document.getElementById('message_decode').value = '';
+        document.getElementById('output').src = '';
+
+
+        document.getElementById('choose').style.display = 'block';
+
+        // read the data into the canvas element
+        var img = new Image();
+        img.onload = function() {
+			var canvas = document.getElementById('canvas');
+            var ctx = canvas.getContext('2d');
+            ctx.canvas.width = img.width;
+            ctx.canvas.height = img.height;
+            ctx.drawImage(img, 0, 0);
+            
+			count = mask.maxTextLength(canvas);
+			document.getElementById('hide_len').innerHTML = '隐藏文本最大长度: ' + count;
+            //decode();
+        };
+        img.src = event.target.result;
+    };
+
+    reader.readAsDataURL(e.target.files[0]);
+};
+
+var encode_nav = function(){
+    init_nav('encode','decode');
+}
+
+//show firs hide secode
+function init_nav(first,second){
+    document.getElementById(first+'_div').style.display = 'block';
+    document.getElementById(second+'_div').style.display = 'none';
+    document.getElementById('message_encode').value = '';
+    document.getElementById('message_decode').value = '';
+    document.getElementById('encode_base64').value = '';
+    document.getElementById('output').src = '';
+    // document.getElementById('canvas')
+}
+
+
+// encode the image and save it
+var encode = function() {
+    var message = document.getElementById('message_encode').value;
+    var output = document.getElementById('output');
+    var canvas = document.getElementById('canvas');
+	var debug = document.getElementById('debug');
+	var preview = document.getElementById('preview');
+	var ctx = canvas.getContext('2d');
+
+	ctx.drawImage(preview, 0, 0, preview.width, preview.height);
+
+	mask.opts.debug = debug.checked;
+	var res = mask.hideText(canvas, message);
+
+    if(res!==false){
+        output.src = canvas.toDataURL();
+        // decodeURIComponent
+        document.getElementById('encode_base64').value = canvas.toDataURL();
+    }
+};
+// decode the image and display the contents if there is anything
+var decode = function() {
+    init_nav('decode','encode');
+    // decode the message with the supplied password
+    var canvas = document.getElementById('canvas');
+    var message = mask.revealText(canvas);
+    document.getElementById('message_decode').value = message;
+};
+
+function checkLen(e){
+    if(e.value.length > count){
+        alert('超出长度上限')
+    }
+}
+
+  </script>
+ </body>
+</html>
